@@ -1,3 +1,3 @@
-# GCP
+# Learning Content
 
-This repository contains files related GCP Trainings.
+This repository contains files related to Learning outcomes.
