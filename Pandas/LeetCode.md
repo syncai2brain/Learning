@@ -39,14 +39,27 @@ c. Solution;
 ---
 
 Display the First Three Rows ```df.head(3)```
+
 Filter Rows and Columns: Write a solution to select the name and age of the student with player_id = 155 ```df[df['id' == 155]][['name','age']```
+
 Create a New Column: Write a solution to create a new column name bonus that contains the doubled values of the salary column. ```df['bonus'] = df['salary'] * 2```
+
 Drop Duplicate Rows based on a column ```df.drop_duplicates(subset=['col1'],inplace=True)```
+
 Drop Na Rows based on a columns ```df.dropna(subset=['col1'],inplace=True)```
+
 Modify the column by * 4 ```df['salary'] = df['salary'] * 2```
+
 Rename Columns ```students.rename({'id':'student_id','first':'first_name','last':'last_name','age':'age_in_years'},axis = 1, inplace=True)```
+
 Change Data Type ```students['grade'] = students['grade'].astype(int)```
+
 Fill Missing Data ```products['quantity'].fillna(0, inplace=True)```
+
 Concatenate these two DataFrames vertically into one DataFrame. ```df = pd.concat([df1,df2])```
+
 Pivot ```table = pd.pivot_table(weather,values='temperature',index='month',columns=['city'])```
+
 Melt ```table = report.melt(id_vars='product',var_name='quarter',value_name='sales')```
+
+Filter and sort ```df = animals[animals['weight'] > 100].sort_values(by='weight',ascending=False)[['name']]6```
